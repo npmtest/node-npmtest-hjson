@@ -1,1 +1,40 @@
-{     "devDependencies": {         "hjson": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-hjson",     "homepage": "https://github.com/npmtest/node-npmtest-hjson",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-hjson.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [hjson (v2.4.1)](http://hjson.org) [![npm package](https://img.shields.io/npm/v/npmtest-hjson.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hjson) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hjson.svg)](https://travis-ci.org/npmtest/node-npmtest-hjson)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "hjson": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-hjson",
+    "keywords": [
+        "coverage",
+        "test",
+        "hjson"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_hjson.js",
+    "name": "npmtest-hjson",
+    "nameAlias": "npmtest_hjson",
+    "nameOriginal": "npmtest-hjson",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-hjson.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
