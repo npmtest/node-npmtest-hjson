@@ -1,4 +1,7 @@
-# test coverage for  [hjson (v2.4.1)](http://hjson.org)  [![npm package](https://img.shields.io/npm/v/npmtest-hjson.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hjson) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hjson.svg)](https://travis-ci.org/npmtest/node-npmtest-hjson)
+# npmtest-hjson
+
+#### basic test coverage for  [hjson (v2.4.1)](http://hjson.org)  [![npm package](https://img.shields.io/npm/v/npmtest-hjson.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hjson) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hjson.svg)](https://travis-ci.org/npmtest/node-npmtest-hjson)
+
 #### A user interface for JSON.
 
 [![NPM](https://nodei.co/npm/hjson.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/hjson)
